@@ -4,8 +4,11 @@
 ![Foto de perfil](https://i.pinimg.com/564x/bc/0f/7a/bc0f7a40df1f50916676a5355d837aa2.jpg)
 
 ## Sobre mí
+
 Soy lizzie, estudio y me gustan los perritos.
-![Foto](https://i.pinimg.com/564x/9a/69/ae/9a69ae3e1039a41cf3929ca01b0b06ca.jpg)
+
+<img src="(https://i.pinimg.com/564x/9a/69/ae/9a69ae3e1039a41cf3929ca01b0b06ca.jpg)" alt="Foto" width="200">
+
 ## Gustos
 - **Pintar:** <span style="color: purple;"> Me apasiona poder crear.
 - **Hobbies:** <span style="color: green;"> Disfruto leer libros y el hockey.
