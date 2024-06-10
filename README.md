@@ -15,5 +15,5 @@ Soy lizzie, estudio y me gustan los perritos.
 - **Carrera profesional:** Relaciones internacionales y obtener una maestria.
 - **Personal:** Quiero viajar por todo el mundo, conocer diferentes culturas y ayudar en lo mayor posible a las demas personas.
 
-(((https://ar.pinterest.com/pin/2533343536294554/)/))
+![GIF ]((https://ar.pinterest.com/pin/2533343536294554/))
 
