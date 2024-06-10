@@ -7,12 +7,13 @@
 
 Soy lizzie, estudio y me gustan los perritos.
 
-<img src="(https://i.pinimg.com/564x/9a/69/ae/9a69ae3e1039a41cf3929ca01b0b06ca.jpg)" alt="Foto" width="200">
+![Foto de perfil](https://i.pinimg.com/564x/9a/69/ae/9a69ae3e1039a41cf3929ca01b0b06ca.jpg)
+
 
 ## Gustos
-- **Pintar:** <span style="color: purple;"> Me apasiona poder crear.
-- **Hobbies:** <span style="color: green;"> Disfruto leer libros y el hockey.
-- **Música:** <span style="color: green;"> Me gusta escuchar pop y jazz.
+- **Pintar:**  Me apasiona poder crear.
+- **Hobbies:** Disfruto leer libros y el hockey.
+- **Música:**  Me gusta escuchar pop y jazz.
 
 ## Expectativas  
 - **Carrera profesional:** <span style="color: orange;"> Relaciones internacionales y obtener una maestria.
