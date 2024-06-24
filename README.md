@@ -16,8 +16,6 @@ Soy lizzie, estudio y me gustan los perritos.
 - **Música:**  Me gusta escuchar pop y jazz.
 
 ## Expectativas  
-- **Carrera profesional:** <span style="color: orange;"> Relaciones internacionales y obtener una maestria.
-- **Personal:**  <span style="color: pink;"> Quiero viajar por todo el mundo, conocer diferentes culturas y ayudar en lo mayor posible a las demas personas.
-
-![GIF ]((https://ar.pinterest.com/pin/2533343536294554/))
+- **Carrera**Relaciones internacionales y obtener una maestria.
+- **Personal:**   Quiero viajar por todo el mundo, conocer diferentes culturas y ayudar en lo mayor posible a las demas 
 
