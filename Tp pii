@@ -1,0 +1,925 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/liz096/liz096/blob/main/Tp%20pii\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "8VOD-zpMJovw"
+      },
+      "outputs": [],
+      "source": [
+        "# Lista de alumnos\n",
+        "alumnos = [\n",
+        "    \"Alurralde, Solange Stefania\",\n",
+        "    \"Alvarado, Ludmila Del Milagro\",\n",
+        "    \"Angel, Camila Juliana\",\n",
+        "    \"Arenas, Lucas Gabriel\",\n",
+        "    \"Caseres, Maria Antonia\",\n",
+        "    \"Castillo, Paulina Milagros\",\n",
+        "    \"Correa Segovia, Hugo Mariano\",\n",
+        "    \"D Elia, Alvaro Tadeo\",\n",
+        "    \"Flores, Victoria Agustina\",\n",
+        "    \"Geronimo Soriano, Lizzie Amaya\",\n",
+        "    \"GUZMAN, ANGÉLICA MORENA\",\n",
+        "    \"Guzman, Jazmin Esmeralda Belen\",\n",
+        "    \"Jaime, Anita Maria Belen\",\n",
+        "    \"Lacour Polo, Nazarena\",\n",
+        "    \"Lascano Guanca, Marcelo Fabricio\",\n",
+        "    \"Lezcano, Celia Morena\",\n",
+        "    \"Mamani Kynast, Nicolas Mauricio\",\n",
+        "    \"Martinez, Tomas Andres\",\n",
+        "    \"PORTELLA VALDIVIA, PEDRO FRANCISCO\",\n",
+        "    \"Retamal Cisneros, Zacarias Josue\",\n",
+        "    \"Rosales, Francisco Gabriel\",\n",
+        "    \"Salem Barba, Mahia\",\n",
+        "    \"Soto Camara, Agustin Ignacio\",\n",
+        "    \"Villalba, Irina\",\n",
+        "    \"Voltolini, Emanuel Tobias\",\n",
+        "    \"Zalazar, Santino Stefano\",\n",
+        "    \"ABUD LASPIUR, LOURDES MARIEL\",\n",
+        "    \"Amador, Luana Micaela\",\n",
+        "    \"Anaquin, Leonardo Ezequiel\",\n",
+        "    \"Araoz Sanchez, Lautaro Nahuel\",\n",
+        "    \"Argañaraz, Agostina Abril\",\n",
+        "    \"Barrera, Matias Ezequiel\",\n",
+        "    \"Barrozo Vedia, Joaquin Nicolas\",\n",
+        "    \"Bettinelli, Valentino\",\n",
+        "    \"Bracamonte Martinez, Salvador\",\n",
+        "    \"Colque Rivero, Ariana Zoe Del Valle\",\n",
+        "    \"Diaz, Dulce Maitena\",\n",
+        "    \"FIGUEROA, SANTINO JOSUE\",\n",
+        "    \"Flores Cardozo, Agustina Tiara\",\n",
+        "    \"Gallo, Octavio Ismael\",\n",
+        "    \"Galvan, Lourdes Yamila\",\n",
+        "    \"Giangreco, Vitto Tomasso\",\n",
+        "    \"Grancara, Martina Luna\",\n",
+        "    \"Guanca, Sara Elizabeth\",\n",
+        "    \"Lopez, Victoria Constanza\",\n",
+        "    \"Mamani Garrido, Rosario Agostina\",\n",
+        "    \"Marinaro, Martin Ezequiel\",\n",
+        "    \"Merluzzi Dagum, Ignacio\",\n",
+        "    \"Messina, Martina\",\n",
+        "    \"RASUK, KARIM\", \"Rios, Lucia Magali\",\n",
+        "    \"Sanchez Flores, Matías Agustín\",\n",
+        "    \"Scarano, Renato Marcelo\",\n",
+        "    \"Sierra, Lucas Mauricio\",\n",
+        "    \"Tapia, Martin Gabriel\",\n",
+        "    \"Vilte, Mia Antonella Alondra\",\n",
+        "    \"Virgillito, Katya Milena\"\n",
+        "]"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Dada la lista estudiantes:\n",
+        "> - Hacer una celda para resolver cada punto.\n",
+        "- El TP resuelto será revisado en tu repositorio, no es necesario que lo envíes, pero sí que lo pushees correctamente.\n",
+        "- En la nota inicial se contempla:\n",
+        "  - La creación del fork.\n",
+        "  - El pusheo de los cambios realizados.\n",
+        "  - La resolución de los ejercicios propuestos.\n"
+      ],
+      "metadata": {
+        "id": "rd6Ug6v3J4uN"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Reemplaza todos los valores por los que obtengas del método title(). De esta manera tu lista quedara con los datos más homogéneos."
+      ],
+      "metadata": {
+        "id": "wRLng-uURyJ3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(len(alumnos)):\n",
+        "  alumnos[i]=alumnos[i].title()\n",
+        "print(alumnos)"
+      ],
+      "metadata": {
+        "id": "5lFqJoTaSIWi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e6c413a6-ec7a-4f8c-f4fd-6a604e686534"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Alurralde, Solange Stefania', 'Alvarado, Ludmila Del Milagro', 'Angel, Camila Juliana', 'Arenas, Lucas Gabriel', 'Caseres, Maria Antonia', 'Castillo, Paulina Milagros', 'Correa Segovia, Hugo Mariano', 'D Elia, Alvaro Tadeo', 'Flores, Victoria Agustina', 'Geronimo Soriano, Lizzie Amaya', 'Guzman, Angélica Morena', 'Guzman, Jazmin Esmeralda Belen', 'Jaime, Anita Maria Belen', 'Lacour Polo, Nazarena', 'Lascano Guanca, Marcelo Fabricio', 'Lezcano, Celia Morena', 'Mamani Kynast, Nicolas Mauricio', 'Martinez, Tomas Andres', 'Portella Valdivia, Pedro Francisco', 'Retamal Cisneros, Zacarias Josue', 'Rosales, Francisco Gabriel', 'Salem Barba, Mahia', 'Soto Camara, Agustin Ignacio', 'Villalba, Irina', 'Voltolini, Emanuel Tobias', 'Zalazar, Santino Stefano', 'Abud Laspiur, Lourdes Mariel', 'Amador, Luana Micaela', 'Anaquin, Leonardo Ezequiel', 'Araoz Sanchez, Lautaro Nahuel', 'Argañaraz, Agostina Abril', 'Barrera, Matias Ezequiel', 'Barrozo Vedia, Joaquin Nicolas', 'Bettinelli, Valentino', 'Bracamonte Martinez, Salvador', 'Colque Rivero, Ariana Zoe Del Valle', 'Diaz, Dulce Maitena', 'Figueroa, Santino Josue', 'Flores Cardozo, Agustina Tiara', 'Gallo, Octavio Ismael', 'Galvan, Lourdes Yamila', 'Giangreco, Vitto Tomasso', 'Grancara, Martina Luna', 'Guanca, Sara Elizabeth', 'Lopez, Victoria Constanza', 'Mamani Garrido, Rosario Agostina', 'Marinaro, Martin Ezequiel', 'Merluzzi Dagum, Ignacio', 'Messina, Martina', 'Rasuk, Karim', 'Rios, Lucia Magali', 'Sanchez Flores, Matías Agustín', 'Scarano, Renato Marcelo', 'Sierra, Lucas Mauricio', 'Tapia, Martin Gabriel', 'Vilte, Mia Antonella Alondra', 'Virgillito, Katya Milena']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for alumno in alumnos:\n",
+        "  print(alumno)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "li5a8xlb8H_O",
+        "outputId": "8a2f5671-a6a3-4e4a-ccbd-eefd5637201c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Alurralde, Solange Stefania\n",
+            "Alvarado, Ludmila Del Milagro\n",
+            "Angel, Camila Juliana\n",
+            "Arenas, Lucas Gabriel\n",
+            "Caseres, Maria Antonia\n",
+            "Castillo, Paulina Milagros\n",
+            "Correa Segovia, Hugo Mariano\n",
+            "D Elia, Alvaro Tadeo\n",
+            "Flores, Victoria Agustina\n",
+            "Geronimo Soriano, Lizzie Amaya\n",
+            "Guzman, Angélica Morena\n",
+            "Guzman, Jazmin Esmeralda Belen\n",
+            "Jaime, Anita Maria Belen\n",
+            "Lacour Polo, Nazarena\n",
+            "Lascano Guanca, Marcelo Fabricio\n",
+            "Lezcano, Celia Morena\n",
+            "Mamani Kynast, Nicolas Mauricio\n",
+            "Martinez, Tomas Andres\n",
+            "Portella Valdivia, Pedro Francisco\n",
+            "Retamal Cisneros, Zacarias Josue\n",
+            "Rosales, Francisco Gabriel\n",
+            "Salem Barba, Mahia\n",
+            "Soto Camara, Agustin Ignacio\n",
+            "Villalba, Irina\n",
+            "Voltolini, Emanuel Tobias\n",
+            "Zalazar, Santino Stefano\n",
+            "Abud Laspiur, Lourdes Mariel\n",
+            "Amador, Luana Micaela\n",
+            "Anaquin, Leonardo Ezequiel\n",
+            "Araoz Sanchez, Lautaro Nahuel\n",
+            "Argañaraz, Agostina Abril\n",
+            "Barrera, Matias Ezequiel\n",
+            "Barrozo Vedia, Joaquin Nicolas\n",
+            "Bettinelli, Valentino\n",
+            "Bracamonte Martinez, Salvador\n",
+            "Colque Rivero, Ariana Zoe Del Valle\n",
+            "Diaz, Dulce Maitena\n",
+            "Figueroa, Santino Josue\n",
+            "Flores Cardozo, Agustina Tiara\n",
+            "Gallo, Octavio Ismael\n",
+            "Galvan, Lourdes Yamila\n",
+            "Giangreco, Vitto Tomasso\n",
+            "Grancara, Martina Luna\n",
+            "Guanca, Sara Elizabeth\n",
+            "Lopez, Victoria Constanza\n",
+            "Mamani Garrido, Rosario Agostina\n",
+            "Marinaro, Martin Ezequiel\n",
+            "Merluzzi Dagum, Ignacio\n",
+            "Messina, Martina\n",
+            "Rasuk, Karim\n",
+            "Rios, Lucia Magali\n",
+            "Sanchez Flores, Matías Agustín\n",
+            "Scarano, Renato Marcelo\n",
+            "Sierra, Lucas Mauricio\n",
+            "Tapia, Martin Gabriel\n",
+            "Vilte, Mia Antonella Alondra\n",
+            "Virgillito, Katya Milena\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Desarrolla un script que permita ingresar un nombre y muestre cuantas veces aparece este en la lista\n"
+      ],
+      "metadata": {
+        "id": "dYEGkYZyLy9I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Version Lucia\n",
+        "nombre = input(\"Ingrese un nombre: \").title()\n",
+        "nombres = []\n",
+        "for alumno in alumnos:\n",
+        "  lista_nombres= alumno.replace(',','').split()\n",
+        "  nombres.extend(lista_nombres)\n",
+        "print(f\"{nombre} está {nombres.count(nombre)} veces en la lista de nombres\")"
+      ],
+      "metadata": {
+        "id": "-B9fB0sSL_Dk",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "30482fdb-4686-4498-89bd-6ee03ad7458a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un nombre: sara\n",
+            "Sara está 1 veces en la lista de nombres\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Versión Luna\n",
+        "cantidad = 0\n",
+        "nombre = input(\"Ingrese un nombre: \").capitalize()\n",
+        "for alumno in alumnos:\n",
+        "  if nombre in alumno:\n",
+        "    cantidad +=1\n",
+        "print(f\"{nombre} está {cantidad} veces en la lista de nombres\")"
+      ],
+      "metadata": {
+        "id": "bgK7eNUVEmDz",
+        "outputId": "f5a67315-b87c-4264-f457-64c030fc4a69",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un nombre: sara\n",
+            "Sara está 1 veces en la lista de nombres\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = \"Tapia, Martin Gabriel\"\n",
+        "nombre = nombre.replace(',','')\n",
+        "nombre.split()"
+      ],
+      "metadata": {
+        "id": "KOcFxNur-XWR",
+        "outputId": "5589f282-0c6f-440b-f705-f3ceda4a2cb5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Tapia', 'Martin', 'Gabriel']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. Desarrolla un script en python que permita ingresar un nombre y mostrar en que posición de la lista se encuentra el mismo. Realiza las combinaciones necesarias para que no se genere un error si es que el nombre no existe."
+      ],
+      "metadata": {
+        "id": "UW2dlBsGMAte"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre= input(\"Ingrese un nombre completo: \").title()\n",
+        "if nombre in alumnos:\n",
+        "  print(f\"{nombre} está en la posicion {alumnos.index(nombre)}\")\n",
+        "else:\n",
+        "  print(f\"{nombre} no se encuentra en la lista\")"
+      ],
+      "metadata": {
+        "id": "EawAy4SANtkl",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8e17c953-35c0-4ac1-9140-6339712ad67b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un nombre completo: Alurralde, Solange Stefania\n",
+            "Alurralde, Solange Stefania está en la posicion 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. Agrega un nombre al final de la lista, otro al principio y otro en la posición anterior a la de tu nombre en la lista. Tene en cuenta el formato usado para ingresar los datos: \"apellidos, nombres\""
+      ],
+      "metadata": {
+        "id": "kZeEHUYVNwGV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre_final = input(\"ingrese un nombre para agregar al final de la lista: \").title()\n",
+        "alumnos.append(nombre_final)\n",
+        "\n",
+        "\n",
+        "for alumno in alumnos:\n",
+        "  print(alumno)"
+      ],
+      "metadata": {
+        "id": "q05GnxXgORzt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre_inicio = input(\"Ingrese un nombre para agregar al principio de la lista: \").title()\n",
+        "alumnos.insert(0,nombre_inicio)\n",
+        "\n",
+        "for alumno in alumnos:\n",
+        "  print(alumno)"
+      ],
+      "metadata": {
+        "id": "a-4mvra8ApwA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre_antes = input(\"Ingrese un nombre para agregar antes del tuyo en la lista: \").title()\n",
+        "alumnos.insert(54,nombre_antes)\n",
+        "\n",
+        "for alumno in alumnos:\n",
+        "  print(alumno)"
+      ],
+      "metadata": {
+        "id": "VgYiLXQhAqC3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. Mostrá cada elemento de la lista mientras la vacias usando el metodo pop(). Para lograr esto usá la estructura while.\n",
+        "\n",
+        "Tene en cuenta que:\n",
+        "\n",
+        "\n",
+        ">```python\n",
+        "bool([]) = False\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "b_we1Oz4OUBN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pass"
+      ],
+      "metadata": {
+        "id": "bjn9DhewPhWF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6. Crea un menú para ordenar la lista de manera ascendente o descendente. Realiza esta acción y muestra el resultado según la opción elegida por el usuario."
+      ],
+      "metadata": {
+        "id": "xY4BuqGdQBF1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "opcion = input(\"Elija la forma de ordenar la lista [a] Ascendente [d] Descendente: \")\n",
+        "if opcion.lower() == 'a':\n",
+        "  alumnos.sort()\n",
+        "if opcion.lower() == 'd':\n",
+        "  alumnos.sort(reverse=True)\n",
+        "for alumno in alumnos:\n",
+        "  print(alumno)"
+      ],
+      "metadata": {
+        "id": "NKR3ciBKSjhr",
+        "outputId": "836f5485-e191-49a5-a820-a82312843e37",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Elija la forma de ordenar la lista [a] Ascendente [d] Descendente: a\n",
+            "Abud Laspiur, Lourdes Mariel\n",
+            "Alurralde, Solange Stefania\n",
+            "Alvarado, Ludmila Del Milagro\n",
+            "Amador, Luana Micaela\n",
+            "Anaquin, Leonardo Ezequiel\n",
+            "Angel, Camila Juliana\n",
+            "Araoz Sanchez, Lautaro Nahuel\n",
+            "Arenas, Lucas Gabriel\n",
+            "Argañaraz, Agostina Abril\n",
+            "Barrera, Matias Ezequiel\n",
+            "Barrozo Vedia, Joaquin Nicolas\n",
+            "Bettinelli, Valentino\n",
+            "Bracamonte Martinez, Salvador\n",
+            "Caseres, Maria Antonia\n",
+            "Castillo, Paulina Milagros\n",
+            "Colque Rivero, Ariana Zoe Del Valle\n",
+            "Correa Segovia, Hugo Mariano\n",
+            "D Elia, Alvaro Tadeo\n",
+            "Diaz, Dulce Maitena\n",
+            "Figueroa, Santino Josue\n",
+            "Flores Cardozo, Agustina Tiara\n",
+            "Flores, Victoria Agustina\n",
+            "Gallo, Octavio Ismael\n",
+            "Galvan, Lourdes Yamila\n",
+            "Geronimo Soriano, Lizzie Amaya\n",
+            "Giangreco, Vitto Tomasso\n",
+            "Grancara, Martina Luna\n",
+            "Guanca, Sara Elizabeth\n",
+            "Guzman, Angélica Morena\n",
+            "Guzman, Jazmin Esmeralda Belen\n",
+            "Jaime, Anita Maria Belen\n",
+            "Lacour Polo, Nazarena\n",
+            "Lascano Guanca, Marcelo Fabricio\n",
+            "Lezcano, Celia Morena\n",
+            "Lopez, Victoria Constanza\n",
+            "Mamani Garrido, Rosario Agostina\n",
+            "Mamani Kynast, Nicolas Mauricio\n",
+            "Marinaro, Martin Ezequiel\n",
+            "Martinez, Tomas Andres\n",
+            "Merluzzi Dagum, Ignacio\n",
+            "Messina, Martina\n",
+            "Portella Valdivia, Pedro Francisco\n",
+            "Rasuk, Karim\n",
+            "Retamal Cisneros, Zacarias Josue\n",
+            "Rios, Lucia Magali\n",
+            "Rosales, Francisco Gabriel\n",
+            "Salem Barba, Mahia\n",
+            "Sanchez Flores, Matías Agustín\n",
+            "Scarano, Renato Marcelo\n",
+            "Sierra, Lucas Mauricio\n",
+            "Soto Camara, Agustin Ignacio\n",
+            "Tapia, Martin Gabriel\n",
+            "Villalba, Irina\n",
+            "Vilte, Mia Antonella Alondra\n",
+            "Virgillito, Katya Milena\n",
+            "Voltolini, Emanuel Tobias\n",
+            "Zalazar, Santino Stefano\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "7. - Crea, a partir de la lista estudiantes, una nueva lista tupla_estudiantes que contenga los nombres en formato de tuplas, donde el primer elemento sea el apellido y el segundo el nombre.\n",
+        "  - Muestra cada tupla de la nueva lista.\n"
+      ],
+      "metadata": {
+        "id": "7wb4sRbOSkdM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tupla_estudiantes = []\n",
+        "for alumno in alumnos:\n",
+        "  apellido,nombre = alumno.split(\",\")\n",
+        "  tupla_estudiantes.append((apellido,nombre))\n",
+        "for estudiante in tupla_estudiantes:\n",
+        "  print(estudiante)"
+      ],
+      "metadata": {
+        "id": "f9v0mfoZS9_s",
+        "outputId": "f9ee6fc1-36ef-4068-c880-49f03ebe6037",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('Alurralde', ' Solange Stefania')\n",
+            "('Alvarado', ' Ludmila Del Milagro')\n",
+            "('Angel', ' Camila Juliana')\n",
+            "('Arenas', ' Lucas Gabriel')\n",
+            "('Caseres', ' Maria Antonia')\n",
+            "('Castillo', ' Paulina Milagros')\n",
+            "('Correa Segovia', ' Hugo Mariano')\n",
+            "('D Elia', ' Alvaro Tadeo')\n",
+            "('Flores', ' Victoria Agustina')\n",
+            "('Geronimo Soriano', ' Lizzie Amaya')\n",
+            "('GUZMAN', ' ANGÉLICA MORENA')\n",
+            "('Guzman', ' Jazmin Esmeralda Belen')\n",
+            "('Jaime', ' Anita Maria Belen')\n",
+            "('Lacour Polo', ' Nazarena')\n",
+            "('Lascano Guanca', ' Marcelo Fabricio')\n",
+            "('Lezcano', ' Celia Morena')\n",
+            "('Mamani Kynast', ' Nicolas Mauricio')\n",
+            "('Martinez', ' Tomas Andres')\n",
+            "('PORTELLA VALDIVIA', ' PEDRO FRANCISCO')\n",
+            "('Retamal Cisneros', ' Zacarias Josue')\n",
+            "('Rosales', ' Francisco Gabriel')\n",
+            "('Salem Barba', ' Mahia')\n",
+            "('Soto Camara', ' Agustin Ignacio')\n",
+            "('Villalba', ' Irina')\n",
+            "('Voltolini', ' Emanuel Tobias')\n",
+            "('Zalazar', ' Santino Stefano')\n",
+            "('ABUD LASPIUR', ' LOURDES MARIEL')\n",
+            "('Amador', ' Luana Micaela')\n",
+            "('Anaquin', ' Leonardo Ezequiel')\n",
+            "('Araoz Sanchez', ' Lautaro Nahuel')\n",
+            "('Argañaraz', ' Agostina Abril')\n",
+            "('Barrera', ' Matias Ezequiel')\n",
+            "('Barrozo Vedia', ' Joaquin Nicolas')\n",
+            "('Bettinelli', ' Valentino')\n",
+            "('Bracamonte Martinez', ' Salvador')\n",
+            "('Colque Rivero', ' Ariana Zoe Del Valle')\n",
+            "('Diaz', ' Dulce Maitena')\n",
+            "('FIGUEROA', ' SANTINO JOSUE')\n",
+            "('Flores Cardozo', ' Agustina Tiara')\n",
+            "('Gallo', ' Octavio Ismael')\n",
+            "('Galvan', ' Lourdes Yamila')\n",
+            "('Giangreco', ' Vitto Tomasso')\n",
+            "('Grancara', ' Martina Luna')\n",
+            "('Guanca', ' Sara Elizabeth')\n",
+            "('Lopez', ' Victoria Constanza')\n",
+            "('Mamani Garrido', ' Rosario Agostina')\n",
+            "('Marinaro', ' Martin Ezequiel')\n",
+            "('Merluzzi Dagum', ' Ignacio')\n",
+            "('Messina', ' Martina')\n",
+            "('RASUK', ' KARIM')\n",
+            "('Rios', ' Lucia Magali')\n",
+            "('Sanchez Flores', ' Matías Agustín')\n",
+            "('Scarano', ' Renato Marcelo')\n",
+            "('Sierra', ' Lucas Mauricio')\n",
+            "('Tapia', ' Martin Gabriel')\n",
+            "('Vilte', ' Mia Antonella Alondra')\n",
+            "('Virgillito', ' Katya Milena')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "8. Crea un menú como el del ejercicio 6, pero ahora permita elegir si ordenar alfabéticamente por nombre o por apellido.\n",
+        "> Para resolver este ejercicio, solicitar ayuda en clase o en el foro\n"
+      ],
+      "metadata": {
+        "id": "PziNZOOBS_UQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def segundo_elemento(tupla):\n",
+        "  return tupla[1]"
+      ],
+      "metadata": {
+        "id": "uMtHUWhhIWHT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"\"\"\n",
+        "              *********\n",
+        "              *  Menú *\n",
+        "              *********\n",
+        "\n",
+        "[aa] Ascendente según apellidos\n",
+        "[da] Descendente según apellidos\n",
+        "[an] Ascendente según nombres\n",
+        "[dn] Descendente según nombres \"\"\")\n",
+        "opcion = input(\"Ingrese una opcion: \")\n",
+        "if opcion.lower() == 'aa':\n",
+        "  tupla_estudiantes.sort()\n",
+        "if opcion.lower() == 'da':\n",
+        " tupla_estudiantes.sort(reverse = True)\n",
+        "if opcion.lower() == 'an':\n",
+        "  tupla_estudiantes.sort(key= segundo_elemento)\n",
+        "\n",
+        "\n",
+        "for estudiante in tupla_estudiantes:\n",
+        "  print(estudiante)"
+      ],
+      "metadata": {
+        "id": "v72o7Pix76H9",
+        "outputId": "83e43918-52d8-4955-d517-33fcb6b4982a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "     \n",
+            "              *********\n",
+            "              *  Menú *\n",
+            "              *********\n",
+            "\n",
+            "[aa] Ascendente según apellidos \n",
+            "[da] Descendente según apellidos\n",
+            "[an] Ascendente según nombres\n",
+            "[dn] Descendente según nombres \n",
+            "Ingrese una opcion: an\n",
+            "('Argañaraz', ' Agostina Abril')\n",
+            "('Soto Camara', ' Agustin Ignacio')\n",
+            "('Flores Cardozo', ' Agustina Tiara')\n",
+            "('D Elia', ' Alvaro Tadeo')\n",
+            "('Guzman', ' Angélica Morena')\n",
+            "('Jaime', ' Anita Maria Belen')\n",
+            "('Colque Rivero', ' Ariana Zoe Del Valle')\n",
+            "('Angel', ' Camila Juliana')\n",
+            "('Lezcano', ' Celia Morena')\n",
+            "('Diaz', ' Dulce Maitena')\n",
+            "('Voltolini', ' Emanuel Tobias')\n",
+            "('Rosales', ' Francisco Gabriel')\n",
+            "('Correa Segovia', ' Hugo Mariano')\n",
+            "('Merluzzi Dagum', ' Ignacio')\n",
+            "('Villalba', ' Irina')\n",
+            "('Guzman', ' Jazmin Esmeralda Belen')\n",
+            "('Barrozo Vedia', ' Joaquin Nicolas')\n",
+            "('Rasuk', ' Karim')\n",
+            "('Virgillito', ' Katya Milena')\n",
+            "('Araoz Sanchez', ' Lautaro Nahuel')\n",
+            "('Anaquin', ' Leonardo Ezequiel')\n",
+            "('Geronimo Soriano', ' Lizzie Amaya')\n",
+            "('Abud Laspiur', ' Lourdes Mariel')\n",
+            "('Galvan', ' Lourdes Yamila')\n",
+            "('Amador', ' Luana Micaela')\n",
+            "('Arenas', ' Lucas Gabriel')\n",
+            "('Sierra', ' Lucas Mauricio')\n",
+            "('Rios', ' Lucia Magali')\n",
+            "('Alvarado', ' Ludmila Del Milagro')\n",
+            "('Salem Barba', ' Mahia')\n",
+            "('Lascano Guanca', ' Marcelo Fabricio')\n",
+            "('Caseres', ' Maria Antonia')\n",
+            "('Marinaro', ' Martin Ezequiel')\n",
+            "('Tapia', ' Martin Gabriel')\n",
+            "('Messina', ' Martina')\n",
+            "('Grancara', ' Martina Luna')\n",
+            "('Barrera', ' Matias Ezequiel')\n",
+            "('Sanchez Flores', ' Matías Agustín')\n",
+            "('Vilte', ' Mia Antonella Alondra')\n",
+            "('Lacour Polo', ' Nazarena')\n",
+            "('Mamani Kynast', ' Nicolas Mauricio')\n",
+            "('Gallo', ' Octavio Ismael')\n",
+            "('Castillo', ' Paulina Milagros')\n",
+            "('Portella Valdivia', ' Pedro Francisco')\n",
+            "('Scarano', ' Renato Marcelo')\n",
+            "('Mamani Garrido', ' Rosario Agostina')\n",
+            "('Bracamonte Martinez', ' Salvador')\n",
+            "('Figueroa', ' Santino Josue')\n",
+            "('Zalazar', ' Santino Stefano')\n",
+            "('Guanca', ' Sara Elizabeth')\n",
+            "('Alurralde', ' Solange Stefania')\n",
+            "('Martinez', ' Tomas Andres')\n",
+            "('Bettinelli', ' Valentino')\n",
+            "('Flores', ' Victoria Agustina')\n",
+            "('Lopez', ' Victoria Constanza')\n",
+            "('Giangreco', ' Vitto Tomasso')\n",
+            "('Retamal Cisneros', ' Zacarias Josue')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "9. Agrega un dato en la posición siguiente a la de tu nombre en el nuevo formato de tupla. Para esto solicita al usuario su nombre y apellido, almacena estos datos en una tupla y agrega la misma a la lista \"tupla_estudiantes\""
+      ],
+      "metadata": {
+        "id": "mtnmvoZ9TXii"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre_usuario = input(\"Por favor, ingresa tu nombre: \") apellido_usuario = input(\"Por favor, ingresa tu apellido: \") # Formatear el nombre y apellido en el formato deseado nombre_completo = f\"{apellido_usuario}, {nombre_usuario.title()}\" # Buscar la posición para insertar el nuevo dato # En este caso, se buscará el nombre del usuario en la lista para encontrar la posición posicion = None for i, alumno in enumerate(alumnos): apellido, nombre = alumno.split(\", \") if apellido.title() == apellido_usuario.title() and nombre.split()[0].title() == nombre_usuario.title(): posicion = i break # Crear una nueva tupla con la lista de alumnos y el nombre del usuario en el formato correcto tupla_estudiantes = list(map(lambda x: (x.split(\", \")[1].title(), x.split(\", \")[0].title()), alumnos)) # Insertar el nuevo dato en la posición encontrada if posicion is not None: tupla_estudiantes.insert(posicion + 1, (nombre_usuario.title(), apellido_usuario.title())) # Mostrar la lista de tuplas de estudiantes actualizada for estudiante in tupla_estudiantes: print(estudiante)"
+      ],
+      "metadata": {
+        "id": "RSXz_XcvT0Nc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "10. - Pedir al usuario un nombre y mostrar todos los estudiantes que tengan ese nombre.\n",
+        "  - Hacer lo mismo con un apellido.\n"
+      ],
+      "metadata": {
+        "id": "dY4y7OVPT1FT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pass"
+      ],
+      "metadata": {
+        "id": "bVTVfjH4VMBM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "11. Pedir un nombre al usuario y eliminar todos los registros donde se encuentre un estudiante con el nombre ingresado.\n"
+      ],
+      "metadata": {
+        "id": "7zdJLrqXVM30"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pass"
+      ],
+      "metadata": {
+        "id": "3_rnimG_VQr6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "12. Pedir dos apellidos al usuario, y reemplazar el primer apellido por el segundo en todos los registros donde se encuentre."
+      ],
+      "metadata": {
+        "id": "DGU_hs0BVRfa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "apellido_1=input(\"Ingrese el primer apellido: \").title()\n",
+        "apellido_2=input(\"Ingrese el segundo apellido: \").title()\n",
+        "for i in range(len(tupla_estudiantes)):\n",
+        "  apellido,nombre=tupla_estudiantes[i]\n",
+        "  if apellido_1 in apellido:\n",
+        "    # tupla_estudiantes.pop(i)\n",
+        "    # tupla_1=(apellido_2,nombre)\n",
+        "    # tupla_estudiantes.insert(i,tupla_1)\n",
+        "    apellido = apellido.replace(apellido_1,apellido_2)\n",
+        "    tupla_estudiantes[i]= (apellido,nombre)\n",
+        "for estudiante in tupla_estudiantes:\n",
+        "  print(estudiante)"
+      ],
+      "metadata": {
+        "id": "ghxBxrzTV6aL",
+        "outputId": "41aa730b-aadd-4586-b8b3-b9e6a0b8da9d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el primer apellido: barrozo\n",
+            "Ingrese el segundo apellido: guanca\n",
+            "('Alurralde', ' Solange Stefania')\n",
+            "('Alvarado', ' Ludmila Del Milagro')\n",
+            "('Angel', ' Camila Juliana')\n",
+            "('Arenas', ' Lucas Gabriel')\n",
+            "('Caseres', ' Maria Antonia')\n",
+            "('Castillo', ' Paulina Milagros')\n",
+            "('Correa Segovia', ' Hugo Mariano')\n",
+            "('D Elia', ' Alvaro Tadeo')\n",
+            "('Flores', ' Victoria Agustina')\n",
+            "('Geronimo Soriano', ' Lizzie Amaya')\n",
+            "('GUZMAN', ' ANGÉLICA MORENA')\n",
+            "('Guzman', ' Jazmin Esmeralda Belen')\n",
+            "('Jaime', ' Anita Maria Belen')\n",
+            "('Lacour Polo', ' Nazarena')\n",
+            "('Lascano Guanca', ' Marcelo Fabricio')\n",
+            "('Lezcano', ' Celia Morena')\n",
+            "('Mamani Kynast', ' Nicolas Mauricio')\n",
+            "('Martinez', ' Tomas Andres')\n",
+            "('PORTELLA VALDIVIA', ' PEDRO FRANCISCO')\n",
+            "('Retamal Cisneros', ' Zacarias Josue')\n",
+            "('Rosales', ' Francisco Gabriel')\n",
+            "('Salem Barba', ' Mahia')\n",
+            "('Soto Camara', ' Agustin Ignacio')\n",
+            "('Villalba', ' Irina')\n",
+            "('Voltolini', ' Emanuel Tobias')\n",
+            "('Zalazar', ' Santino Stefano')\n",
+            "('ABUD LASPIUR', ' LOURDES MARIEL')\n",
+            "('Amador', ' Luana Micaela')\n",
+            "('Anaquin', ' Leonardo Ezequiel')\n",
+            "('Araoz Sanchez', ' Lautaro Nahuel')\n",
+            "('Argañaraz', ' Agostina Abril')\n",
+            "('Barrera', ' Matias Ezequiel')\n",
+            "('Guanca Vedia', ' Joaquin Nicolas')\n",
+            "('Bettinelli', ' Valentino')\n",
+            "('Bracamonte Martinez', ' Salvador')\n",
+            "('Colque Rivero', ' Ariana Zoe Del Valle')\n",
+            "('Diaz', ' Dulce Maitena')\n",
+            "('FIGUEROA', ' SANTINO JOSUE')\n",
+            "('Flores Cardozo', ' Agustina Tiara')\n",
+            "('Gallo', ' Octavio Ismael')\n",
+            "('Galvan', ' Lourdes Yamila')\n",
+            "('Giangreco', ' Vitto Tomasso')\n",
+            "('Grancara', ' Martina Luna')\n",
+            "('Guanca', ' Sara Elizabeth')\n",
+            "('Lopez', ' Victoria Constanza')\n",
+            "('Mamani Garrido', ' Rosario Agostina')\n",
+            "('Marinaro', ' Martin Ezequiel')\n",
+            "('Merluzzi Dagum', ' Ignacio')\n",
+            "('Messina', ' Martina')\n",
+            "('RASUK', ' KARIM')\n",
+            "('Rios', ' Lucia Magali')\n",
+            "('Sanchez Flores', ' Matías Agustín')\n",
+            "('Scarano', ' Renato Marcelo')\n",
+            "('Sierra', ' Lucas Mauricio')\n",
+            "('Tapia', ' Martin Gabriel')\n",
+            "('Vilte', ' Mia Antonella Alondra')\n",
+            "('Virgillito', ' Katya Milena')\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
